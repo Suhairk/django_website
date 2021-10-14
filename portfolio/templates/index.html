@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SuhairK</title>
+  <title>imsuhair</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
 
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eo_circle_light-blue_white_letter-s.svg/1024px-Eo_circle_light-blue_white_letter-s.svg.png">
@@ -17,17 +18,47 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="static/vendor/aos/aos.css" rel="stylesheet">
-
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
   <!-- Template Main CSS File -->
   <link href="static/css/style.css" rel="stylesheet">
+<!--  chatbot section    -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <!--Reduce height here-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
 
-  
+  $(document).ready(function() {
+
+    // YOUR CODE (NOT RELATED TO DIALOGFLOW MESSENGER)
+
+    window.addEventListener('dfMessengerLoaded', function (event) {
+        $r1 = document.querySelector("df-messenger");
+        $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
+        $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input"); //for other mods
+
+        var sheet = new CSSStyleSheet;
+        sheet.replaceSync( `div.chat-wrapper[opened="true"] { height: 75% }`);
+        $r2.shadowRoot.adoptedStyleSheets = [ sheet ];
+
+        // MORE OF YOUR DIALOGFLOW MESSENGER CODE
+    });
+});
+  </script>
+  <!--end Reduce height here-->
+<!-- end chatbot section    -->
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.5.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -40,12 +71,12 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="static/img/dp_11.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Suhair K</a></h1>
+        <img src="/static/img/Dp_2.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="#about">SUHAIR K</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/suhair.kalaathhouse/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://mail.google.com/" target="_blank" class="google-plus"><i class="bx bxl-google-plus"></i></a>
-          <a href="https://wa.link/drvvdu" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://mywa.link/9061878989" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
           <a href="https://www.linkedin.com/in/suhair-k-55796614b/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://www.instagram.com/suha_ir_k/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
         </div>
@@ -55,10 +86,15 @@
         <ul>
           <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills"><i class="bx bx-user"></i> <span>Skills</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Projects</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li><a href="#skills"><i class="bx bx-code-alt"></i> <span>Technologies</span></a></li>
+          <li><a href="#portfolio"><i class="bx bx-bulb"></i>Projects</a></li>
+          <li><a href="#contact"><i class="bx bxs-contact"></i>Contact</a></li>
+          <!--Clock-->
+        <div style="text-align:center;padding:1em 0;"> <h4>
+        <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/1275004">
+        <span style="color:gray;"></span><br /></a></h4>
+        <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FKolkata" width="100%" height="100" frameborder="3" seamless></iframe> </div>
+        <!--End Clock-->
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -70,11 +106,46 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1><strong>SUHAIR K</strong></h1>
-      <p><span class="typed" data-typed-items="SOFTWARE DEVELOPER , AI DEVELOPER "></span></p>
-      <a href = "#contact"class="btn btn-warning btn-lg btn-hire wow animated zoomIn">HIRE ME</a> <span>
+      <p><span class="typed" data-typed-items="SOFTWARE DEVELOPER , AI DEVELOPER , WEB DEVELOPER"></span></p>
+      <a href = "#contact"class="btn btn-info btn-lg btn-hire wow animated zoomIn">HIRE ME</a> <span>
       <span>&#160; &#160;</span>
-            <a href = "download/" target="_blank" class="btn btn-warning btn-lg btn-hire wow animated zoomIn">DOWNLOAD CV</a> <span>
+  <!--right dropdown-->
+      <div class="btn-group">
+    <a  class="btn btn-info btn-lg btn-hire wow animated zoomIn dropdown-toggle dropdown-toggle-split " data-toggle="dropdown"  aria-expanded="false" >
+            DOWNLOADS   </a> <span>
+  <div class="dropdown-menu" >
+    <a class="dropdown-item" href="download_res/" target="_blank">Resume</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="download_cover/" target="_blank">Cover Letter</a>
+  </div>
+  </div>
+<!--right dropdown end-->
     </div>
+
+          <!--  Chat-->
+      <style>
+  df-messenger {
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color:transparent ;
+   --df-messenger-button-titlebar-font-color: #464748;
+   --df-messenger-chat-background-color: #BCDFF1;
+   --df-messenger-font-color: white;
+   --df-messenger-minimized-chat-close-icon-color:#49F60F
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #0093DF;
+
+  }
+</style>
+      <df-messenger
+          intent="WELCOME"
+          chat-title="Let's chat!"
+          agent-id="83cefa85-6d23-4b1b-84aa-2f9c09e80cb2"
+          language-code="en"
+          wait-Open = "true"
+          chat-icon = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Eo_circle_light-blue_white_letter-s.svg/1024px-Eo_circle_light-blue_white_letter-s.svg.png"
+
+      ></df-messenger>
+
   </section><!-- End Hero -->
 
   <main id="main">
@@ -85,33 +156,32 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Dedicated , passionate and competent AI programmer with 1 year experience in design and developing
-          of Computer vision, DL models for the applications and posses strong mathematical , analytical and problem solving skills</p>
+          <p>Dedicated , passionate and competent <text style="color:#17a2b8">AI programmer</text> with 8 months hands-on experience in design and developing
+          of <text style="color:#17a2b8">Computer vision, DL models</text> for the applications and posses strong mathematical , analytical and problem solving skills</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="static/img/bg_66.jpg" class="img-fluid" alt="">
-          </div>
+
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>AI Developer &amp; Python Developer.</h3>
             <p class="font-italic">
-              
+
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 25 June 1996</li>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Birthday:</strong> 25 June 1996</li>
                   <br>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +91 9061878989</li><br>
-                  <li><i class="icofont-rounded-right"></i> <strong>Location:</strong> Tanur, Kerala, India-676302</li>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Phone:</strong> +91 9061878989</li><br>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Location:</strong> Tanur, Kerala, India-676302</li>
+
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 25</li><br>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor in technology</li><br>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> suhairtanur@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Age:</strong> 25</li><br>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Degree:</strong> Bachelor in technology</li><br>
+                  <li><i class="icofont-rounded-right"></i> <strong style="color:#17a2b8">Email:</strong> suhairk.dev@gmail.com</li>
+
                 </ul>
               </div>
             </div>
@@ -126,12 +196,12 @@
 
 
     <!-- ======= Skills Section ======= -->
+
     <section id="skills" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p><strong>Skills Summary</strong></p>
+          <h2>Technologies</h2>
         </div>
 
         <div class="row skills-content">
@@ -139,37 +209,37 @@
           <div class="col-lg-6" data-aos="fade-up">
 
             <div class="progress">
-              <span class="skill">Python <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <span class="skill"><a href="https://www.python.org/" target ="_blank">Python</a><i class="val"></i></span>
+              <div class="progress-bar-wrap ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Keras <i class="val"></i></span>
+              <span class="skill"><a href="https://keras.io/" target ="_blank">Keras</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Tensorflow<i class="val"></i></span>
+              <span class="skill"><a href="https://www.tensorflow.org/"target ="_blank">Tensorflow</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Open CV  <i class="val"></i></span>
+              <span class="skill"><a href="https://opencv.org/"target ="_blank">Open CV</a> <i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">PIL<i class="val"></i></span>
+              <span class="skill"><a href="https://www.djangoproject.com/" target ="_blank">Django</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -178,39 +248,40 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
             <div class="progress">
-              <span class="skill">MongoDB<i class="val"></i></span>
+              <span class="skill"><a href="https://www.mongodb.com/"target ="_blank">MongoDB</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">SQLite3<i class="val"></i></span>
+              <span class="skill"><a href="https://www.sqlite.org/index.html"target ="_blank">SQLITE3</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">Django<i class="val"></i></span>
+              <span class="skill"><a href="https://html.com/"target ="_blank">HTML</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">HTML<i class="val"></i></span>
+              <span class="skill"><a href="https://en.wikipedia.org/wiki/CSS"target ="_blank">CSS</a><i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val"></i></span>
+              <span class="skill" ><a href="https://getbootstrap.com/"target ="_blank">Bootstrap</a> <i class="val"></i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
+
 
           </div>
 
@@ -229,7 +300,7 @@
           <h2>Projects</h2>
 
         </div>
-        
+
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
   {% for pro in project%}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -245,10 +316,10 @@
               </div>
             </div>
           </div>
-        
+
 {% endfor %}
         </div>
-  
+
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -262,27 +333,29 @@
         </div>
 
 <div class="col-md align-items-stretch height-100">
-           <form class="contact-form" action="/" method ='post'>
+           <form class="contact-form" action="/" method ='post'  name= "form" onsubmit="return sendFunction()">
           {% csrf_token %}
-            <div class="form-group" style= "background-color: #FFFFFF">
-        <strong> <input required  type="text" class="form-control text-light" name="name" placeholder="Name" ></strong>
+            <div class="form-group" style= "background-color: #FFFFFF" >
+
+        <strong> <input required  type="text" class="form-control" id ="name"name="name" placeholder="Name" ></strong>
          </div>
         <div class="form-group" style= "background-color: #FFFFFF">
-         	<input required type="text" class="form-control" placeholder="Email" name="email" Required="">
+         	<input required type="email" class="form-control" placeholder="Email:example@email.com" id ="email"name="email" Required="">
          </div>
-         
+
          <div class="form-group" style= "background-color: #FFFFFF">
-         	<input required type="text" class="form-control" name="phone" placeholder="Phone Number">
+         	<input required type="number" class="form-control" name="phone" id = "phone" placeholder="PhoneNumber:91123456789" pattern="^\d{10}$">
          </div>
-        
+
         <div class="form-group" style= "background-color: #FFFFFF">
-         	<textarea required class="form-control" placeholder="Say something!" name="message" rows="7"></textarea>
+         	<textarea required class="form-control" placeholder="Say something!" id ="message" name="message" rows="7"></textarea>
          </div>
 
         <div class="form-group">
-         <input  onclick="sendFunction()" type="submit" class="btn btn-primary btn-block" value="Submit">
+         <input  type="submit" class="btn btn-info btn-block" value="Submit" id ="button" >
          </div>
         </form>
+
 
         <div class="row" data-aos="fade-in">
 
@@ -298,7 +371,7 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>suhairtanur@gmail.com</p>
+                <p>suhairk.dev@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -311,7 +384,7 @@
 
           </div>
 
-          
+
           </div>
 
         </div>
@@ -325,29 +398,30 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-      No Copyright &copy; 2021  <strong><span></span></strong>
+      No copyright issue &copy; 2021  <strong><span></span></strong>
       </div>
-      
+
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="static/vendor/jquery/jquery.min.js"></script>
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="static/vendor/php-email-form/validate.js"></script>
-  <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="static/vendor/counterup/counterup.min.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/venobox/venobox.min.js"></script>
-  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="static/vendor/typed.js/typed.min.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
-
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/static/vendor/php-email-form/validate.js"></script>
+  <script src="/static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/static/vendor/counterup/counterup.min.js"></script>
+  <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/vendor/venobox/venobox.min.js"></script>
+  <script src="/static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/static/vendor/typed.js/typed.min.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
   <!-- Template Main JS File -->
-  <script src="static/js/main.js"></script>
+  <script src="/static/js/main.js"></script>
 <script>
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
@@ -355,7 +429,34 @@ $('#myModal').on('shown.bs.modal', function () {
 </script>
 <script>
 function sendFunction(){
-    alert("Thanks for your message");
+
+  var uname = document.getElementById("name").value;
+  var umail = document.getElementById("email").value;
+  var uphone = document.getElementById("phone").value;
+  var utext = document.getElementById("message").value;
+  swal({
+    title: "Done!",
+    text: "Thanks for your message",
+    icon: "success",
+    button: "yess!",
+  });
+  if (!uname){
+    document.getElementById("error").innerHTML = "Please enter your name";
+    return false;
+  }
+  if (!uemail){
+    document.getElementById("error").innerHTML = "Please enter valid email id";
+    return false;
+  }
+  if (!uphone){
+    document.getElementById("error").innerHTML = "Please enter valid phone number";
+    return false;
+  }
+  if (!utext){
+    document.getElementById("error").innerHTML = "Please enter your message";
+    return false;
+  }
+
 }
 </script>
 </body>
